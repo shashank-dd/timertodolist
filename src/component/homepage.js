@@ -9,6 +9,7 @@ function HomePage() {
 const[user,setuser]=useState("")
 const[task,settask]=useState([])
 const[ft,setft]=useState(0)
+const[only,setonly]=useState(0)
 
 
 
@@ -59,7 +60,7 @@ const[ft,setft]=useState(0)
             return<div className='list' key={i}>
               <div className='p'>{ele.activity}</div>
              
-            <div id='nm'> <Timer idl={ele._id} time={ele.time}  setft={setft}></Timer></div>
+            <div id='nm'> <Timer idl={ele._id} time={ele.time} setonly={setonly} only={only} setft={setft}></Timer></div>
             </div>
             
           

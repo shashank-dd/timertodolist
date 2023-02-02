@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 
 import axios from "axios";
-const Timer = ({ idl, time, setft }) => {
+const Timer = ({ idl, time, setft,setonly, only }) => {
     const [second, setsecond] = useState(0)
     const [min, setmin] = useState(0)
     const [hour, sethour] = useState(0)
@@ -42,9 +42,17 @@ const Timer = ({ idl, time, setft }) => {
 
             <div className='left'>{time}{hour ? hour : ""}{min ? min : ""}{second ? second : ""}</div>
             {bigflag ? <div className='right'>{!flag ? <button onClick={() => {
-                gop()
-                setd("ongoing")
-                setflag(true)
+                console.log(only,"ooooooop")
+                  if(only==0){
+                    gop()
+                    setd("ongoing")
+                    setflag(true)
+                    setonly(9)
+                  }else{
+                    alert("finishing the ongoing task first or pause the ongoing task")
+                  }
+              
+              
             }}>start</button> : ""}
                 {flag ? <button onClick={() => {
                     clearInterval(id.current)
@@ -52,6 +60,7 @@ const Timer = ({ idl, time, setft }) => {
                     setd("completed")
                     setbigflag(false)
                     timing(idl)
+                    setonly(0)
                     setTimeout(() => {
                         setft((p) => p + 1)
                     }, 2000);
