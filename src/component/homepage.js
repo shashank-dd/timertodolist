@@ -16,7 +16,7 @@ const[ft,setft]=useState(0)
 
   let navigate = useNavigate()
   useEffect(() => {
-    axios.post("http://localhost:8080/blog/data", { token: window.localStorage.getItem("token") }).then(response => {
+    axios.post("https://timertodoback.onrender.com/blog/data", { token: window.localStorage.getItem("token") }).then(response => {
       console.log("bbbbbbbb")
      setuser(response.data.user)
       settask(response.data.dat)

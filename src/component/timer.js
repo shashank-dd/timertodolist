@@ -25,7 +25,7 @@ const Timer = ({ idl, time, setft }) => {
         let pil = {
             g, second
         }
-        const data = await axios.put("http://localhost:8080/blog/put", pil)
+        const data = await axios.put("https://timertodoback.onrender.com/blog/put", pil)
         console.log(data, data.data)
     }
     return (

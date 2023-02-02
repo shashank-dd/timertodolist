@@ -20,7 +20,7 @@ useEffect(()=>{
 async function hh() {
 
 
-    const data = await axios.post("http://localhost:8080/blog/post", post)
+    const data = await axios.post("https://timertodoback.onrender.com/blog/post", post)
     console.log(data,data.data.ok)
     console.log("hh")
     if (data.data.ok === "ok") {
