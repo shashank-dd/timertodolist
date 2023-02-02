@@ -18,6 +18,12 @@ const Timer = ({ idl, time, setft }) => {
     function gop() {
         id.current = setInterval(() => {
             setsecond((p) => p + 1)
+            if(second==60){
+                setmin((p)=>p+1)
+            }
+            if(min==60){
+                sethour((p)=>p+1)
+            }
         }, 1000)
     }
     async function timing(g) {
