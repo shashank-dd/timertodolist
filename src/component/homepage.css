@@ -1,0 +1,120 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.homepage{
+    width: 100%;
+
+}
+.user{
+    width: 100%;
+    height: 69px;
+    border: 3px solid  hwb(95 33% 8% / 0.934);
+    text-align:right;
+    padding: 19px;
+}
+.cont{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+
+}
+.todo{
+    width: 25%;
+    background-color: hwb(95 33% 8% / 0.934);
+}
+.acti{
+width: auto;
+position: relative;
+
+}
+.log{
+    margin: 20px;
+border: 1px solid red;
+height: 20px;
+border-radius: 3px;
+background-color: aquamarine;
+    
+}
+.acti .spa{
+    width: 120px;
+    height: 35px;
+    padding: 5px;
+    color: purple;
+  position: absolute;
+  left: 4%;
+  top:  5%;
+  border: 1px solid purple;
+  border-radius: 3px;
+  
+}
+.k{
+    text-align: center;
+    margin-top: 10px;
+}
+.table{
+    width: 606px;
+    border: 1px solid black;
+
+  
+    margin-top: 100px;
+
+}
+.tr{
+    
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+.th{
+    width: 148px;
+    height: 40px;
+    border: 1px solid black;
+}
+
+.list{
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+   
+    width: 100%;
+    height: 50px;
+    border: 1px solid black;
+}
+.p{
+  width: 147px;
+  height: 50px;
+    border: 1px solid black;
+}
+#nm{
+  
+  width: 100px;
+
+    background-color: aqua;
+}
+.pu{
+    width:400px;
+    display: flex;
+  
+}
+.pm{
+    width: 213px;
+    height: 40px;
+    border: 1px solid black;  
+}
+.left{
+    width: 169px;
+    height: 40px;
+    border: 1px solid black;
+}
+.right{
+    position: relative;
+    width: 124px;
+    height: 40px;
+    left: 180px;
+    top: -27px;
+    
+}

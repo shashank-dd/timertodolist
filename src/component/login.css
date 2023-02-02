@@ -1,0 +1,43 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#container-login{
+width: 99vw;
+height: 99vh;
+border: 1px solid black;
+}
+.login {
+    width: 338px;
+    height: 341px;
+    margin: auto;
+    margin-top: 179px;
+    border: 17px solid blue;
+}
+#loginh1{
+    text-align: center;
+}
+.lo{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 10px;
+  box-sizing: border-box;
+}
+.lo input{
+    width: 90%;
+    margin-left: 10px;
+    height: 23px;
+
+}
+.lob{
+    width: 80%;
+    margin-left: 26px;
+    color: white;
+    background-color: blue;
+    border-radius: 10px;
+    margin-top: 37px;
+}
+#lk{
+  margin-left: 52px;
+  margin-top: 10px;
+}
